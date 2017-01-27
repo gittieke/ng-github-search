@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Http } from '@angular/http';
 import { GitHubComponent } from './components/github.component';
 import { GitHubService } from './services/github.service';
 
 @Component({
+  moduleId:module.id;
   selector: 'my-app',
-  template: '<github></github>',
-  directives: [GitHubComponent],
-  providers: [Http, GitHubService]
+  templateUrl: 'app.component.html',
+  providers: [GitHubService]
 })
+
 export class AppComponent {}
